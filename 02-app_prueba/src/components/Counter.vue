@@ -1,16 +1,19 @@
 <template>
     <h1>{{computedTitle || 'Counter' }}</h1>
-    <p>{{counter}} <sup>2</sup> ={{counter*counter}}</p>
+    <!-- <p>{{counter}} <sup>2</sup> ={{counter*counter}}</p> -->
     <!-- esto se ejecuta cada vez que se rederisa el html -->
     <p>{{counter}} <sup>2</sup> ={{getSquareValue()}}</p>
+    
+    <p data-testid="counter">{{counter}}</p>
     <!-- se ejecuta una sola vez y cuando cambie los datos internos -->
-    <p>{{counter}} <sup>2</sup> ={{squareCounter}}</p>
+    <!-- <p>{{counter}} <sup>2</sup> ={{squareCounter}}</p> -->
 
-    <div>
+    <div class="btn">
        <button 
          v-on:click="aumentar" 
         class="btn btn-verde text-white"
         > + 1 </button>
+        
        <button 
          @click="disminuir" 
         class="btn btn-red text-white"

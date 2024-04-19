@@ -3,18 +3,21 @@
 
   <!-- <Counter title="Entrada"></Counter> -->
   <!-- <Counter :start="15"></Counter> -->
-  <Counter></Counter>
+  <!-- <Counter></Counter> -->
  
+    <Indecision></Indecision>
 </template>
 
 <script>
 
-import Counter from './components/Counter.vue'
+// import Counter from './components/Counter.vue'
+import Indecision from './components/Indecision'
 
 export default {
   name: 'App',
   components: {
-    Counter
+    // Counter
+    Indecision
   }
 }
 </script>
