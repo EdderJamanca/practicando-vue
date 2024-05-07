@@ -30,7 +30,7 @@ import Imagen from './components/Imagen.vue';
 import Opciones from './components/Opciones.vue';
 import getPokemonOptions from './services/getPokemonOptions';
 
-console.log("hola",getPokemonOptions());
+// console.log("hola",getPokemonOptions());
 export default {
     components:{
         Opciones,
