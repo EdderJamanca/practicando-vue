@@ -4,7 +4,7 @@ export default {
     children:[
         {
             path:'',
-            name:'no-veterinaria',
+            name:'retos',
             component:()=>import('@/modules/veterianria/view/NoVeterinaria.vue')
         },
         {
